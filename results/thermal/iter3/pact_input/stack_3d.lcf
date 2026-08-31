@@ -1,0 +1,120 @@
+# =============================================================================
+# PACT 3D Layer Configuration File (LCF)
+# Thermal-Aware Pin-3D Framework for Ariane-136
+# =============================================================================
+#
+# This file defines the full vertical 3D IC package stack for PACT thermal
+# simulation. The layer ordering follows top-to-bottom convention (heat sink
+# at the top, package substrate at the bottom).
+#
+# Face-to-Face (F2F) Hybrid Bonding Configuration:
+#
+#   [Heat Sink]  ─── Layer 0 (convective boundary)
+#   [TIM]        ─── Layer 1
+#   [Tier 1 Si]  ─── Layer 2 (thinned substrate, 10-50 µm)
+#   [Tier 1 Act] ─── Layer 3 (active devices + BEOL metallization)
+#   [Bond Intf]  ─── Layer 4 (SiCN/SiO2 + Cu HBT pads, 0.5-2.0 µm)
+#   [Tier 0 Act] ─── Layer 5 (BEOL metallization + active devices)
+#   [Tier 0 Si]  ─── Layer 6 (bulk substrate, 100-300 µm)
+#   [Package]    ─── Layer 7 (PCB / package substrate)
+#
+# Format:
+#   Each layer block specifies:
+#     - Layer name and type (BLOCK or SOURCE)
+#     - Thickness (m)
+#     - Material reference (mapped in materials.config)
+#     - Lateral grid resolution (nxGrid x nyGrid)
+#     - Floorplan file reference (for SOURCE layers)
+#     - Power trace file reference (for SOURCE layers)
+#
+# =============================================================================
+
+# --- Global Simulation Parameters ---
+# Die dimensions are set from the design DEF (overridden by pact_bridge.py)
+.die_width   1000e-6   # Default die width  [m] (1000 µm)
+.die_height  1000e-6   # Default die height [m] (1000 µm)
+
+# Grid resolution for thermal discretization
+.grid_rows   64
+.grid_cols   64
+
+# Ambient / boundary conditions
+.ambient_temp  25.0    # Ambient temperature [°C]
+.convection_h  8700.0  # Convective heat transfer coefficient [W/(m²·K)]
+                        # (forced air cooling with heatsink)
+
+# =============================================================================
+# Layer Stack Definition
+# =============================================================================
+
+# --- Layer 0: Heat Sink (Copper / Aluminum) ---
+.layer  heatsink
+  .type       BLOCK
+  .thickness  6.9e-3          # 6.9 mm
+  .material   copper_heatsink
+  .lateral_k  401.0           # Cu: 401 W/(m·K)
+  .vertical_k 401.0
+
+# --- Layer 1: Thermal Interface Material (TIM) ---
+.layer  tim
+  .type       BLOCK
+  .thickness  20.0e-6         # 20 µm
+  .material   tim_compound
+  .lateral_k  5.0             # TIM: ~5 W/(m·K)
+  .vertical_k 5.0
+
+# --- Layer 2: Tier 1 Silicon Substrate (Thinned) ---
+.layer  tier1_substrate
+  .type       BLOCK
+  .thickness  50.0e-6         # 50 µm (thinned wafer)
+  .material   silicon
+  .lateral_k  148.0           # Si: 148 W/(m·K) @ 25°C
+  .vertical_k 148.0
+
+# --- Layer 3: Tier 1 Active Device & BEOL Metallization (SOURCE) ---
+.layer  tier1_active
+  .type       SOURCE
+  .thickness  10.0e-6         # 10 µm (active + BEOL stack)
+  .material   silicon_beol_composite
+  .lateral_k  65.0            # Effective composite K
+  .vertical_k 20.0            # Reduced vertical K through ILD stacks
+  .floorplan  tier1.flp
+  .powertrace tier1.ptrace
+
+# --- Layer 4: Bonding Interface (SiCN / SiO2 + Cu HBT pads) ---
+.layer  bonding_interface
+  .type       BLOCK
+  .thickness  1.5e-6          # 1.5 µm bonding layer
+  .material   bonding_composite
+  .lateral_k  1.8             # Dominated by SiO2 dielectric
+  .vertical_k 3.5             # Higher due to Cu HBT pillars
+
+# --- Layer 5: Tier 0 Active Device & BEOL Metallization (SOURCE) ---
+.layer  tier0_active
+  .type       SOURCE
+  .thickness  10.0e-6         # 10 µm (BEOL stack + active)
+  .material   silicon_beol_composite
+  .lateral_k  65.0
+  .vertical_k 20.0
+  .floorplan  tier0.flp
+  .powertrace tier0.ptrace
+
+# --- Layer 6: Tier 0 Bulk Silicon Substrate ---
+.layer  tier0_substrate
+  .type       BLOCK
+  .thickness  200.0e-6        # 200 µm (full thickness wafer)
+  .material   silicon
+  .lateral_k  148.0
+  .vertical_k 148.0
+
+# --- Layer 7: Package Substrate / PCB ---
+.layer  package_substrate
+  .type       BLOCK
+  .thickness  1.0e-3          # 1.0 mm
+  .material   fr4_pcb
+  .lateral_k  0.3             # FR4: ~0.3 W/(m·K)
+  .vertical_k 0.3
+
+# =============================================================================
+# End of Layer Configuration
+# =============================================================================

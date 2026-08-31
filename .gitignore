@@ -1,0 +1,127 @@
+# ==============================================================================
+# Thermal Pin3D OpenROAD - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Large Design & EDA Files (> 25MB)
+# ------------------------------------------------------------------------------
+# Parasitic Extraction Files (typically 100MB - 300MB+)
+*.spef
+*.spef.gz
+*.spef.bz2
+test.spef
+results/**/*.spef
+results/*.spef
+
+# Design Exchange Format Layout Files (typically 40MB+)
+*.def
+*.def.gz
+results/**/*.def
+results/*.def
+
+# GDSII / OASIS Stream Files
+*.gds
+*.gdsii
+*.gds.gz
+*.oas
+*.oasis
+
+# Simulation & Activity Waveform Dumps (> 25MB)
+*.vcd
+*.fsdb
+*.vpd
+*.saif
+*.shm
+*.trn
+*.sdf
+
+# Large Media / Video & Transient Data Files (> 25MB)
+*.avi
+*.mp4
+*.mov
+pact_solver/VisualPACT/Example_video/
+pact_solver/VisualPACT/Example_transient_data_files/
+
+# ------------------------------------------------------------------------------
+# 2. EDA Tool Artifacts, Logs & Scratch Runs
+# ------------------------------------------------------------------------------
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+openroad.log
+opensta.log
+sta.log
+
+# Scratch / Working Directories
+scratch_*/
+scratch/
+temp/
+tmp/
+
+# ------------------------------------------------------------------------------
+# 3. Python Artifacts & Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.cache
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+
+# ------------------------------------------------------------------------------
+# 4. OS & System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# ------------------------------------------------------------------------------
+# 5. IDEs & Text Editors
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/

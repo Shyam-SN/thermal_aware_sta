@@ -1,0 +1,90 @@
+[WARNING STA-0168] unknown field nets.
+Startpoint: issue_stage_i/i_issue_read_operands/_2448_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: i_cache_subsystem/i_nbdcache/sram_block[5].data_sram/macro_mem[2].i_ram
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.0000    0.0000    0.0000   clock core_clock (rise edge)
+                              0.0000    0.0000   clock network delay (ideal)
+                    0.0000    0.0000    0.0000 ^ issue_stage_i/i_issue_read_operands/_2448_/CK (DFFR_X1_bottom)
+     5   22.6822    0.0512    0.1443    0.1443 ^ issue_stage_i/i_issue_read_operands/_2448_/Q (DFFR_X1_bottom)
+                    0.0513    0.0011    0.1454 ^ ex_stage_i/_05463_/A (BUF_X1_bottom)
+     8   33.9673    0.0756    0.1039    0.2492 ^ ex_stage_i/_05463_/Z (BUF_X1_bottom)
+                    0.0764    0.0089    0.2582 ^ ex_stage_i/_07835_/A (BUF_X1_bottom)
+    10   15.2938    0.0364    0.0655    0.3237 ^ ex_stage_i/_07835_/Z (BUF_X1_bottom)
+                    0.0364    0.0013    0.3250 ^ ex_stage_i/_07847_/A (BUF_X1_bottom)
+    10   13.3766    0.0320    0.0567    0.3817 ^ ex_stage_i/_07847_/Z (BUF_X1_bottom)
+                    0.0320    0.0005    0.3821 ^ ex_stage_i/_07855_/A1 (AND2_X1_bottom)
+     2    5.9203    0.0182    0.0492    0.4313 ^ ex_stage_i/_07855_/ZN (AND2_X1_bottom)
+                    0.0182    0.0001    0.4315 ^ ex_stage_i/lsu_i/_5611_/A (INV_X1_bottom)
+     2    7.4134    0.0103    0.0190    0.4505 v ex_stage_i/lsu_i/_5611_/ZN (INV_X1_bottom)
+                    0.0103    0.0002    0.4507 v ex_stage_i/lsu_i/_5752_/B (HA_X1_bottom)
+     2    3.2737    0.0074    0.0342    0.4849 v ex_stage_i/lsu_i/_5752_/CO (HA_X1_bottom)
+                    0.0074    0.0001    0.4850 v ex_stage_i/lsu_i/_2937_/A2 (OR2_X1_bottom)
+     1    2.0032    0.0094    0.0496    0.5346 v ex_stage_i/lsu_i/_2937_/ZN (OR2_X1_bottom)
+                    0.0094    0.0001    0.5347 v ex_stage_i/lsu_i/_2939_/A (AOI21_X1_bottom)
+     2    5.7107    0.0394    0.0600    0.5947 ^ ex_stage_i/lsu_i/_2939_/ZN (AOI21_X1_bottom)
+                    0.0394    0.0001    0.5948 ^ ex_stage_i/lsu_i/_2940_/B2 (AOI21_X1_bottom)
+     2    4.8578    0.0169    0.0291    0.6238 v ex_stage_i/lsu_i/_2940_/ZN (AOI21_X1_bottom)
+                    0.0169    0.0002    0.6240 v ex_stage_i/lsu_i/_2941_/A3 (NOR3_X1_bottom)
+     1    1.9810    0.0283    0.0542    0.6782 ^ ex_stage_i/lsu_i/_2941_/ZN (NOR3_X1_bottom)
+                    0.0283    0.0001    0.6783 ^ ex_stage_i/lsu_i/_2942_/A2 (NOR2_X1_bottom)
+     1    3.3502    0.0111    0.0169    0.6952 v ex_stage_i/lsu_i/_2942_/ZN (NOR2_X1_bottom)
+                    0.0111    0.0002    0.6953 v ex_stage_i/lsu_i/_5647_/CI (FA_X1_bottom)
+     1    2.8140    0.0145    0.0702    0.7655 v ex_stage_i/lsu_i/_5647_/CO (FA_X1_bottom)
+                    0.0145    0.0001    0.7657 v ex_stage_i/lsu_i/_4232_/A (XNOR2_X1_bottom)
+     3   30.3440    0.1450    0.1713    0.9369 ^ ex_stage_i/lsu_i/_4232_/ZN (XNOR2_X1_bottom)
+                    0.1453    0.0071    0.9440 ^ ex_stage_i/lsu_i/_4780_/B1 (AOI21_X1_bottom)
+     3    8.4058    0.0449    0.0523    0.9963 v ex_stage_i/lsu_i/_4780_/ZN (AOI21_X1_bottom)
+                    0.0449    0.0007    0.9970 v ex_stage_i/lsu_i/_4781_/A (INV_X1_bottom)
+     3   23.0650    0.0519    0.0779    1.0749 ^ ex_stage_i/lsu_i/_4781_/ZN (INV_X1_bottom)
+                    0.0530    0.0093    1.0841 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5193_/A (BUF_X1_upper)
+     4    9.8226    0.0246    0.0508    1.1349 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5193_/Z (BUF_X1_upper)
+                    0.0246    0.0002    1.1351 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5194_/A (BUF_X2_upper)
+    10   29.4314    0.0351    0.0568    1.1919 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5194_/Z (BUF_X2_upper)
+                    0.0351    0.0007    1.1926 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5214_/A (XOR2_X1_upper)
+     1    1.8848    0.0223    0.0526    1.2452 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5214_/Z (XOR2_X1_upper)
+                    0.0223    0.0001    1.2453 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5218_/A1 (NOR4_X1_upper)
+     1    2.3542    0.0117    0.0138    1.2591 v ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5218_/ZN (NOR4_X1_upper)
+                    0.0117    0.0001    1.2592 v ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5224_/A3 (AND4_X1_upper)
+     1    1.8369    0.0074    0.0388    1.2981 v ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5224_/ZN (AND4_X1_upper)
+                    0.0074    0.0001    1.2982 v ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5274_/A3 (NOR4_X1_upper)
+     1    6.3258    0.0844    0.1236    1.4218 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5274_/ZN (NOR4_X1_upper)
+                    0.0844    0.0006    1.4224 ^ ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5348_/A1 (NAND4_X1_upper)
+     4   15.5064    0.0635    0.1032    1.5257 v ex_stage_i/lsu_i/i_store_unit/store_buffer_i/_5348_/ZN (NAND4_X1_upper)
+                    0.0635    0.0021    1.5278 v ex_stage_i/lsu_i/_3406_/A2 (NOR4_X4_bottom)
+     2    8.8456    0.0497    0.0901    1.6179 ^ ex_stage_i/lsu_i/_3406_/ZN (NOR4_X4_bottom)
+                    0.0497    0.0002    1.6181 ^ ex_stage_i/lsu_i/_3407_/A2 (NOR2_X1_bottom)
+     2    3.7677    0.0175    0.0202    1.6383 v ex_stage_i/lsu_i/_3407_/ZN (NOR2_X1_bottom)
+                    0.0175    0.0002    1.6385 v ex_stage_i/lsu_i/_3602_/A2 (NOR2_X1_bottom)
+     1   12.7146    0.0638    0.0862    1.7247 ^ ex_stage_i/lsu_i/_3602_/ZN (NOR2_X1_bottom)
+                    0.0639    0.0037    1.7284 ^ i_cache_subsystem/i_nbdcache/_04845_/A (BUF_X1_upper)
+     6   10.8831    0.0270    0.0543    1.7827 ^ i_cache_subsystem/i_nbdcache/_04845_/Z (BUF_X1_upper)
+                    0.0270    0.0005    1.7832 ^ i_cache_subsystem/i_nbdcache/_04846_/B2 (AOI21_X1_upper)
+     2    3.0839    0.0110    0.0220    1.8052 v i_cache_subsystem/i_nbdcache/_04846_/ZN (AOI21_X1_upper)
+                    0.0110    0.0001    1.8053 v i_cache_subsystem/i_nbdcache/_06964_/A1 (OR2_X1_upper)
+     1    1.1924    0.0085    0.0440    1.8493 v i_cache_subsystem/i_nbdcache/_06964_/ZN (OR2_X1_upper)
+                    0.0085    0.0000    1.8493 v i_cache_subsystem/i_nbdcache/_06965_/A (BUF_X1_upper)
+     9   18.9787    0.0216    0.0502    1.8995 v i_cache_subsystem/i_nbdcache/_06965_/Z (BUF_X1_upper)
+                    0.0216    0.0008    1.9003 v i_cache_subsystem/i_nbdcache/_07014_/B2 (OAI21_X1_upper)
+    89  938.0303    4.1310    4.5454    6.4457 ^ i_cache_subsystem/i_nbdcache/_07014_/ZN (OAI21_X1_upper)
+                    6.2565    0.4658    6.9115 ^ i_cache_subsystem/i_nbdcache/sram_block[5].data_sram/macro_mem[2].i_ram/addr_in[1] (fakeram45_256x16_upper)
+                                        6.9115   data arrival time
+
+                    0.0000    3.0000    3.0000   clock core_clock (rise edge)
+                              0.0000    3.0000   clock network delay (ideal)
+                              0.0000    3.0000   clock reconvergence pessimism
+                                        3.0000 ^ i_cache_subsystem/i_nbdcache/sram_block[5].data_sram/macro_mem[2].i_ram/clk (fakeram45_256x16_upper)
+                             -0.0500    2.9500   library setup time
+                                        2.9500   data required time
+-------------------------------------------------------------------------------------
+                                        2.9500   data required time
+                                       -6.9115   data arrival time
+-------------------------------------------------------------------------------------
+                                       -3.9615   slack (VIOLATED)
+
+

@@ -1,0 +1,24 @@
+{
+  "Baseline 3D Placement": {
+    "peak_temperature_tier0_c": 32.64000000000004,
+    "peak_temperature_tier1_c": 30.75,
+    "overall_peak_temperature_c": 32.64000000000004,
+    "cross_tier_gradient_c": 1.8900000000000432,
+    "wirelength_hpwl_m": 3.58,
+    "placement_mode": "Standard RePLACE (Wirelength-Only)"
+  },
+  "Thermal-Aware 3D Placement (TAP)": {
+    "peak_temperature_tier0_c": 31.341183105468783,
+    "peak_temperature_tier1_c": 30.258859497070322,
+    "overall_peak_temperature_c": 31.341183105468783,
+    "cross_tier_gradient_c": 1.082323608398461,
+    "wirelength_hpwl_m": 3.615,
+    "hpwl_overhead_pct": 0.98,
+    "placement_mode": "Thermal Repulsion Gradient Optimization"
+  },
+  "Optimization Gains": {
+    "hotspot_temperature_drop_c": 1.2988168945312601,
+    "hotspot_drop_pct": 17.000221132608022,
+    "wirelength_penalty_pct": 0.98
+  }
+}

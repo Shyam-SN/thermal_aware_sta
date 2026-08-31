@@ -1,0 +1,9 @@
+Layer,FloorplanFile,Thickness (m),PtraceFile,LateralHeatFlow
+0,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/package_substrate.flp,0.001,,True
+1,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier0_substrate.flp,0.0002,,True
+2,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier0.flp,0.00001,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier0.ptrace,True
+3,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/bonding_interface.flp,0.0000015,,True
+4,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier1.flp,0.00001,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier1.ptrace,True
+5,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tier1_substrate.flp,0.00005,,True
+6,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/tim.flp,0.00002,,True
+7,/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/results/thermal/iter0/pact_input/heatsink.flp,0.001,,True

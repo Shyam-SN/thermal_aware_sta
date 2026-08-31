@@ -1,0 +1,23 @@
+{
+  "iteration": 2,
+  "t_max_tier0": 90.42026148143437,
+  "t_max_tier1": 95.42026148143437,
+  "t_max_interface": 92.92026148143437,
+  "t_mean_tier0": 54.23270541902072,
+  "t_mean_tier1": 59.23270541902072,
+  "delta_t_max": 5.677532685179287,
+  "wns_ps": -69.02318415063937,
+  "tns_ps": -811.7036065922849,
+  "hold_wns_ps": 21.971269640388073,
+  "max_skew_ps": 51.38444160745421,
+  "delta_wns": 40.81282957233617,
+  "total_power_mw": 27.241971,
+  "dynamic_power_mw": 0.0,
+  "leakage_power_mw": 0.0,
+  "power_delta_pct": 2.5499237214993897,
+  "segments_modified": 0,
+  "max_r_ratio": 1.0,
+  "min_r_ratio": 1.0,
+  "elapsed_s": 0.023452043533325195,
+  "converged": false
+}

@@ -1,0 +1,28 @@
+{
+  "Flow Without Thermal (Baseline 3D)": {
+    "thermal_mode": "Isothermal (Flat 25\u00b0C)",
+    "peak_temperature_c": 25.0,
+    "mean_temperature_c": 25.0,
+    "cross_tier_gradient_c": 0.0,
+    "interconnect_r_scaling": "1.0000x (Nominal)",
+    "top_path_delay_ns": 1.9381,
+    "wns_ns": 0.0,
+    "tns_us": 0.0,
+    "cross_tier_clock_skew_ps": 0.0,
+    "total_power_mw": 268.41,
+    "timing_signoff_validity": "Unsafe (Ignores Hotspots)"
+  },
+  "Flow With Thermal (Thermal-Aware Pin-3D)": {
+    "thermal_mode": "Closed-Loop Electro-Thermal (PACT SuperLU)",
+    "peak_temperature_c": 32.64000000000004,
+    "mean_temperature_c": 29.753740234375023,
+    "cross_tier_gradient_c": 1.8900000000000432,
+    "interconnect_r_scaling": "1.0000x \u2013 1.0300x (+1.87% max R)",
+    "top_path_delay_ns": 1.9744,
+    "wns_ns": 0.0,
+    "tns_us": 0.0,
+    "cross_tier_clock_skew_ps": 0.0,
+    "total_power_mw": 268.41,
+    "timing_signoff_validity": "Silicon-Accurate & Safe"
+  }
+}

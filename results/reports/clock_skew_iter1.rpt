@@ -1,0 +1,7 @@
+Clock core_clock
+   0.44 source latency i_cache_subsystem/i_nbdcache/valid_dirty_sram.macro_mem[0].i_ram/clk ^
+  -1.24 target latency i_cache_subsystem/i_nbdcache/sram_block[5].data_sram/macro_mem[2].i_ram/clk ^
+   0.00 CRPR
+--------------
+  -0.81 setup skew
+

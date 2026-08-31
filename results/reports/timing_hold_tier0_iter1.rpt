@@ -1,0 +1,29 @@
+[WARNING STA-0168] unknown field nets.
+Startpoint: irq_i[0] (input port clocked by core_clock)
+Endpoint: csr_regfile_i/_14347_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+Fanout       Cap      Slew     Delay      Time   Description
+-------------------------------------------------------------------------------------
+                    0.0000    0.0000    0.0000   clock core_clock (rise edge)
+                              0.0000    0.0000   clock network delay (ideal)
+                              0.0000    0.0000 v input external delay
+     1    2.4659    0.0000    0.0000    0.0000 v irq_i[0] (in)
+                    0.0001    0.0000    0.0000 v csr_regfile_i/_14347_/D (DFFR_X1_bottom)
+                                        0.0000   data arrival time
+
+                    0.0000    0.0000    0.0000   clock core_clock (rise edge)
+                              0.0000    0.0000   clock network delay (ideal)
+                              0.0000    0.0000   clock reconvergence pessimism
+                                        0.0000 ^ csr_regfile_i/_14347_/CK (DFFR_X1_bottom)
+                              0.0028    0.0028   library hold time
+                                        0.0028   data required time
+-------------------------------------------------------------------------------------
+                                        0.0028   data required time
+                                       -0.0000   data arrival time
+-------------------------------------------------------------------------------------
+                                       -0.0027   slack (VIOLATED)
+
+

@@ -221,6 +221,19 @@ class FMHypergraphPartitioner:
 
 
 def partition_design(input_verilog, input_macros, output_verilog, ratio=0.5, mode="fm"):
+    # Resolve input verilog path if relative path differs by execution directory
+    if not os.path.exists(input_verilog):
+        candidates = [
+            os.path.join("..", input_verilog),
+            os.path.join("/Users/prathima/Desktop/Shyam", input_verilog),
+            os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "..", input_verilog),
+            "/Users/prathima/Desktop/Shyam/designs/src/ariane136/ariane.v"
+        ]
+        for cand in candidates:
+            if os.path.exists(cand):
+                input_verilog = cand
+                break
+
     print(f"Reading 2D gate netlist: {input_verilog}")
     with open(input_verilog, 'r') as f:
         verilog_content = f.read()

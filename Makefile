@@ -262,7 +262,10 @@ flow_pin3d_pure: dirs
 
 # Stage 12: Advanced Algorithmic Upgrades
 partition_fm: dirs
-	$(PYTHON) $(SCRIPTS_DIR)/partition_design.py --mode fm
+	$(PYTHON) $(SCRIPTS_DIR)/partition_design.py --mode fm \
+		--netlist ../designs/src/ariane136/ariane.v \
+		--macros ../designs/nangate45_3D/ariane136/macros.v \
+		--output $(RESULTS_DIR)/ariane_3d.v
 
 thermal_derate: dirs
 	$(PYTHON) $(SCRIPTS_DIR)/thermal_cell_derate.py

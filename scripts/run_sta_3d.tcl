@@ -168,6 +168,18 @@ if {[file exists $tier0_spef]} {
     log_msg "WARNING: Tier 0 SPEF not found — timing will use estimated parasitics"
 }
 
+if {[file exists $tier1_spef] && $tier1_spef ne $tier0_spef} {
+    log_msg "Reading Tier 1 thermal SPEF: $tier1_spef"
+    read_spef $tier1_spef
+}
+
+# Apply spatial instance-level thermal timing derates
+set derate_script "${report_dir}/cell_thermal_derates.tcl"
+if {[file exists $derate_script]} {
+    log_msg "Sourcing instance thermal timing derates: $derate_script"
+    source $derate_script
+}
+
 # ---------------------------------------------------------------------------
 # Step 3: Run Setup Timing Analysis
 # ---------------------------------------------------------------------------
@@ -279,6 +291,20 @@ if {[file exists $wns_rpt]} {
     }
 }
 
+# Extract Clock Skew
+set skew_val "0.0"
+if {[file exists $skew_rpt]} {
+    set fp [open $skew_rpt r]
+    set skew_content [read $fp]
+    close $fp
+    foreach line [split $skew_content "\n"] {
+        if {[regexp {skew\s+([\-\d.]+)} $line -> val] || [regexp {worst\s+skew\s+([\-\d.]+)} $line -> val]} {
+            set skew_val $val
+            break
+        }
+    }
+}
+
 # Write metrics JSON (simple manual JSON construction for Tcl compatibility)
 set fp [open $metrics_file w]
 puts $fp "\{"
@@ -286,6 +312,7 @@ puts $fp "  \"iteration\": $iteration,"
 puts $fp "  \"design\": \"$design_name\","
 puts $fp "  \"wns_ns\": \"$wns_val\","
 puts $fp "  \"tns_ns\": \"$tns_val\","
+puts $fp "  \"skew_ps\": \"$skew_val\","
 puts $fp "  \"setup_report\": \"$setup_rpt\","
 puts $fp "  \"hold_report\": \"$hold_rpt\","
 puts $fp "  \"skew_report\": \"$skew_rpt\","

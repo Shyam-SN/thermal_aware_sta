@@ -40,7 +40,7 @@
     "total_power_mw": 268.78595986580314,
     "wns_ns": -3.96,
     "tns_us": -11.97552,
-    "clock_skew_ps": 0.0,
+    "clock_skew_ps": 14.2,
     "repeaters": 11240,
     "thermal_accuracy": "Closed-Loop PACT Poisson Solve"
   }

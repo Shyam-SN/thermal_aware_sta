@@ -392,8 +392,9 @@ source {sta_tcl}
                     data = json.load(f)
                 metrics.wns_ps = float(data.get('wns_ns', 0)) * 1000  # ns → ps
                 metrics.tns_ps = float(data.get('tns_ns', 0)) * 1000
+                metrics.max_skew_ps = float(data.get('skew_ps', 0))
             except (json.JSONDecodeError, ValueError) as e:
-                logger.warning(f"Failed to parse metrics: {e}")
+                logger.warning(f"Error parsing metrics JSON: {e}")
 
         return metrics
 
@@ -862,6 +863,20 @@ class ThermalFlowOrchestrator:
 
             except Exception as e:
                 logger.error(f"Thermal RCX failed for Tier {tier}: {e}")
+
+        # Generate spatial instance-level timing derates for OpenSTA
+        try:
+            derate_cmd = [
+                sys.executable,
+                os.path.join(self.config.scripts_dir, "thermal_cell_derate.py"),
+                "--def-path", self.config.tier_defs.get(0, ""),
+                "--grid-t0", os.path.join(self.thermal_dir, "thermal_grid_tier0.npz"),
+                "--grid-t1", os.path.join(self.thermal_dir, "thermal_grid_tier1.npz"),
+                "--output-tcl", os.path.join(self.report_dir, "cell_thermal_derates.tcl")
+            ]
+            subprocess.run(derate_cmd, check=False)
+        except Exception as e:
+            logger.warning(f"Could not generate thermal cell derate script: {e}")
 
         return thermal_spefs
 

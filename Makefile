@@ -76,6 +76,7 @@ TIMESTAMP       := $(shell date +%Y%m%d_%H%M%S)
 # ---------------------------------------------------------------------------
 
 .PHONY: all run_thermal_pin3d run_full_benchmark flow_pin3d_pure compare_3way run_3way_benchmark \
+        partition_fm thermal_derate gate_opt floorplan_3d \
         test test_pact test_rcx dry_run \
         plot visualizer_3d compare report_html benchmark_ab thermal_place all_reports \
         clean clean_results clean_thermal help dirs
@@ -259,7 +260,20 @@ flow_pin3d_pure: dirs
 		--max-migrations 250
 	@echo "✓ Pure Pin-3D Flow Complete!"
 
-# Stage 12: 3-Way Benchmark Comparison (Native 2D vs Pure Pin-3D vs Pin-3D+Thermal)
+# Stage 12: Advanced Algorithmic Upgrades
+partition_fm: dirs
+	$(PYTHON) $(SCRIPTS_DIR)/partition_design.py --mode fm
+
+thermal_derate: dirs
+	$(PYTHON) $(SCRIPTS_DIR)/thermal_cell_derate.py
+
+gate_opt: dirs
+	$(PYTHON) $(SCRIPTS_DIR)/thermal_gate_opt.py
+
+floorplan_3d: dirs
+	$(PYTHON) $(SCRIPTS_DIR)/floorplan_3d.py
+
+# Stage 13: 3-Way Benchmark Comparison (Native 2D vs Pure Pin-3D vs Pin-3D+Thermal)
 compare_3way: dirs
 	$(PYTHON) $(SCRIPTS_DIR)/compare_3way_flows.py \
 		--results-dir $(RESULTS_DIR)

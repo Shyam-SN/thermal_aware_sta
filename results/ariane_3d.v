@@ -761411,7 +761411,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761420,7 +761420,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761429,7 +761429,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761457,7 +761457,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14401(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761466,7 +761466,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14401(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761475,7 +761475,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14401(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761503,7 +761503,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14402(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761512,7 +761512,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14402(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761521,7 +761521,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14402(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761549,7 +761549,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14403(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761558,7 +761558,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14403(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761567,7 +761567,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14403(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761595,7 +761595,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14404(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761604,7 +761604,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14404(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761613,7 +761613,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14404(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761641,7 +761641,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14405(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761650,7 +761650,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14405(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761659,7 +761659,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14405(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761687,7 +761687,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14406(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761696,7 +761696,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14406(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761705,7 +761705,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14406(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761733,7 +761733,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14407(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761742,7 +761742,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14407(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761751,7 +761751,7 @@ module sram_DATA_WIDTH32h0000002c_NUM_WORDS256_14407(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761778,7 +761778,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761787,7 +761787,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761796,7 +761796,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761823,7 +761823,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14408(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761832,7 +761832,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14408(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761841,7 +761841,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14408(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761868,7 +761868,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14409(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761877,7 +761877,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14409(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761886,7 +761886,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14409(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761913,7 +761913,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14410(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761922,7 +761922,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14410(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761931,7 +761931,7 @@ module sram_DATA_WIDTH32h0000002d_NUM_WORDS32h00000100_14410(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761955,7 +761955,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761964,7 +761964,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761973,7 +761973,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761982,7 +761982,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -761991,7 +761991,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762000,7 +762000,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762009,7 +762009,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762018,7 +762018,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256(clk_i, rst_ni, req_i, we_i, addr_
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762042,7 +762042,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762051,7 +762051,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762060,7 +762060,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762069,7 +762069,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762078,7 +762078,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762087,7 +762087,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762096,7 +762096,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762105,7 +762105,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14411(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762129,7 +762129,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762138,7 +762138,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762147,7 +762147,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762156,7 +762156,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762165,7 +762165,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762174,7 +762174,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762183,7 +762183,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762192,7 +762192,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14412(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762216,7 +762216,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762225,7 +762225,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762234,7 +762234,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762243,7 +762243,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762252,7 +762252,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762261,7 +762261,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762270,7 +762270,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762279,7 +762279,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14413(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762303,7 +762303,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762312,7 +762312,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762321,7 +762321,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762330,7 +762330,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762339,7 +762339,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762348,7 +762348,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762357,7 +762357,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762366,7 +762366,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14414(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762390,7 +762390,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762399,7 +762399,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762408,7 +762408,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762417,7 +762417,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762426,7 +762426,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762435,7 +762435,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762444,7 +762444,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762453,7 +762453,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14415(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762477,7 +762477,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762486,7 +762486,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762495,7 +762495,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762504,7 +762504,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762513,7 +762513,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762522,7 +762522,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762531,7 +762531,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762540,7 +762540,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14416(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762564,7 +762564,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762573,7 +762573,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762582,7 +762582,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762591,7 +762591,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762600,7 +762600,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762609,7 +762609,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762618,7 +762618,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762627,7 +762627,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS256_14417(clk_i, rst_ni, req_i, we_i,
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762651,7 +762651,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762660,7 +762660,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762669,7 +762669,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762678,7 +762678,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762687,7 +762687,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762696,7 +762696,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762705,7 +762705,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762714,7 +762714,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100(clk_i, rst_ni, req_i, we_
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762738,7 +762738,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762747,7 +762747,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762756,7 +762756,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762765,7 +762765,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762774,7 +762774,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762783,7 +762783,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762792,7 +762792,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762801,7 +762801,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14418(clk_i, rst_ni, req_
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762825,7 +762825,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762834,7 +762834,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762843,7 +762843,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762852,7 +762852,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762861,7 +762861,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762870,7 +762870,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762879,7 +762879,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762888,7 +762888,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14419(clk_i, rst_ni, req_
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762912,7 +762912,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
   LOGIC0_X1_upper _1_ (
     .Z(_0_)
   );
-  fakeram45_256x16_upper \macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[0].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762921,7 +762921,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[15:0]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[1].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[1].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762930,7 +762930,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[31:16]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[2].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[2].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762939,7 +762939,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[47:32]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[3].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[3].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762948,7 +762948,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[63:48]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[4].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[4].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762957,7 +762957,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[79:64]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[5].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[5].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762966,7 +762966,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[95:80]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[6].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[6].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -762975,7 +762975,7 @@ module sram_DATA_WIDTH32h00000080_NUM_WORDS32h00000100_14420(clk_i, rst_ni, req_
     .wd_in(wdata_i[111:96]),
     .we_in(we_i)
   );
-  fakeram45_256x16_upper \macro_mem[7].i_ram  (
+  fakeram45_256x16_bottom \macro_mem[7].i_ram  (
     .addr_in(addr_i),
     .ce_in(req_i),
     .clk(clk_i),
@@ -829010,7 +829010,7 @@ module std_nbdcache_CACHE_START_ADDRx0000000080000000(clk_i, rst_ni, enable_i, f
     .wdata_i({ \i_tag_cmp.wdata_o[173] , \i_tag_cmp.wdata_o[172] , \i_tag_cmp.wdata_o[171] , \i_tag_cmp.wdata_o[170] , \i_tag_cmp.wdata_o[169] , \i_tag_cmp.wdata_o[168] , \i_tag_cmp.wdata_o[167] , \i_tag_cmp.wdata_o[166] , \i_tag_cmp.wdata_o[165] , \i_tag_cmp.wdata_o[164] , \i_tag_cmp.wdata_o[163] , \i_tag_cmp.wdata_o[162] , \i_tag_cmp.wdata_o[161] , \i_tag_cmp.wdata_o[160] , \i_tag_cmp.wdata_o[159] , \i_tag_cmp.wdata_o[158] , \i_tag_cmp.wdata_o[157] , \i_tag_cmp.wdata_o[156] , \i_tag_cmp.wdata_o[155] , \i_tag_cmp.wdata_o[154] , \i_tag_cmp.wdata_o[153] , \i_tag_cmp.wdata_o[152] , \i_tag_cmp.wdata_o[151] , \i_tag_cmp.wdata_o[150] , \i_tag_cmp.wdata_o[149] , \i_tag_cmp.wdata_o[148] , \i_tag_cmp.wdata_o[147] , \i_tag_cmp.wdata_o[146] , \i_tag_cmp.wdata_o[145] , \i_tag_cmp.wdata_o[144] , \i_tag_cmp.wdata_o[143] , \i_tag_cmp.wdata_o[142] , \i_tag_cmp.wdata_o[141] , \i_tag_cmp.wdata_o[140] , \i_tag_cmp.wdata_o[139] , \i_tag_cmp.wdata_o[138] , \i_tag_cmp.wdata_o[137] , \i_tag_cmp.wdata_o[136] , \i_tag_cmp.wdata_o[135] , \i_tag_cmp.wdata_o[134] , \i_tag_cmp.wdata_o[133] , \i_tag_cmp.wdata_o[132] , \i_tag_cmp.wdata_o[131] , \i_tag_cmp.wdata_o[130]  }),
     .we_i(\i_tag_cmp.we_o )
   );
-  fakeram45_256x16_upper \valid_dirty_sram.macro_mem[0].i_ram  (
+  fakeram45_256x16_bottom \valid_dirty_sram.macro_mem[0].i_ram  (
     .addr_in({ \i_tag_cmp.addr_o[11] , \i_tag_cmp.addr_o[10] , \i_tag_cmp.addr_o[9] , \i_tag_cmp.addr_o[8] , \i_tag_cmp.addr_o[7] , \i_tag_cmp.addr_o[6] , \i_tag_cmp.addr_o[5] , \i_tag_cmp.addr_o[4]  }),
     .ce_in(\valid_dirty_sram.req_i ),
     .clk(clk_i),

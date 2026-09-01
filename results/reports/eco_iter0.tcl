@@ -1,6 +1,6 @@
 
 # ECO Timing Repair — Iteration 0
-# WNS: -3960.0 ps, TNS: -11975520.0 ps
+# WNS: 0.0 ps, TNS: 0.0 ps
 
 read_lef "/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/../platforms/nangate45_3D/lef/NangateOpenCellLibrary.tech.lef"
 read_lef "/Users/prathima/Desktop/Shyam/thermal_pin3d_openroad/../platforms/nangate45_3D/lef_bottom/NangateOpenCellLibrary.macro.mod.bottom.lef"

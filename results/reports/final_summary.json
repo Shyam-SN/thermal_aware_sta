@@ -22,7 +22,7 @@
     "segments_modified": 0,
     "max_r_ratio": 1.0,
     "min_r_ratio": 1.0,
-    "elapsed_s": 91.39170575141907,
+    "elapsed_s": 92.02823400497437,
     "converged": true
   },
   "all_iterations": [
@@ -46,7 +46,7 @@
       "segments_modified": 0,
       "max_r_ratio": 1.0,
       "min_r_ratio": 1.0,
-      "elapsed_s": 91.53438210487366,
+      "elapsed_s": 91.66340398788452,
       "converged": false
     },
     {
@@ -69,7 +69,7 @@
       "segments_modified": 0,
       "max_r_ratio": 1.0,
       "min_r_ratio": 1.0,
-      "elapsed_s": 91.39170575141907,
+      "elapsed_s": 92.02823400497437,
       "converged": true
     }
   ],

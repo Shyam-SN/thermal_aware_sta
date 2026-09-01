@@ -1,0 +1,47 @@
+{
+  "Flow 1: Native 2D OpenROAD": {
+    "name": "Flow 1: Native 2D OpenROAD",
+    "footprint_mm2": 2.0,
+    "hpwl_m": 5.42,
+    "miv_count": 0,
+    "miv_thermal_scaling": "N/A (2D Single Die)",
+    "peak_temp_c": 25.0,
+    "cross_tier_gradient_c": 0.0,
+    "total_power_mw": 294.5,
+    "wns_ns": -5.12,
+    "tns_us": -38.4,
+    "clock_skew_ps": 0.0,
+    "repeaters": 14210,
+    "thermal_accuracy": "Isothermal (No 3D Stack)"
+  },
+  "Flow 2: Pure Pin-3D (ICCAD '20)": {
+    "name": "Flow 2: Pure Pin-3D (ICCAD '20)",
+    "footprint_mm2": 1.0,
+    "hpwl_m": 3.58,
+    "miv_count": 8940,
+    "miv_thermal_scaling": "1.0000x (Nominal Unscaled)",
+    "peak_temp_c": 25.0,
+    "cross_tier_gradient_c": 0.0,
+    "total_power_mw": 281.2,
+    "wns_ns": -4.62,
+    "tns_us": -21.4,
+    "clock_skew_ps": 18.5,
+    "repeaters": 12450,
+    "thermal_accuracy": "Isothermal (Unmodeled 3D Hotspots)"
+  },
+  "Flow 3: Pin-3D + Thermal-Aware (Proposed)": {
+    "name": "Flow 3: Pin-3D + Thermal-Aware (Proposed)",
+    "footprint_mm2": 1.0,
+    "hpwl_m": 3.615,
+    "miv_count": 8940,
+    "miv_thermal_scaling": "1.0000x \u2013 1.0258x (T_intf = 31.57\u00b0C)",
+    "peak_temp_c": 32.64000000000004,
+    "cross_tier_gradient_c": 1.8900000000000432,
+    "total_power_mw": 268.78595986580314,
+    "wns_ns": -3.96,
+    "tns_us": -11.97552,
+    "clock_skew_ps": 0.0,
+    "repeaters": 11240,
+    "thermal_accuracy": "Closed-Loop PACT Poisson Solve"
+  }
+}

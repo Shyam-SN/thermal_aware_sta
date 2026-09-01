@@ -207,15 +207,14 @@ thermal_pin3d_openroad/
 ## Quickstart Commands
 
 ```bash
-# ALL-IN-ONE MASTER COMMAND:
-# Runs 3D P&R (from scratch) + OpenRCX + Non-Thermal STA + Thermal Flow + Comparison + 3D Visualizer
-make run_full_benchmark
+# 1. ALL-IN-ONE 3-WAY MASTER BENCHMARK:
+# Runs Native 2D + Pure Pin-3D (3-Pass Opt + 3D ECO) + Pin-3D Thermal-Aware + Compares All 3 & Generates HTML Sign-off
+make run_3way_benchmark
 
-# Individual Stage Commands:
-make run_thermal_pin3d              # Thermal closed-loop flow (reuses existing P&R SPEF)
-make run_thermal_pin3d FORCE_PNR=1  # Thermal closed-loop flow with fresh 3D P&R
-make benchmark_ab                   # Direct A/B benchmark (With Thermal vs Without Thermal)
-make compare                        # 3-way benchmark comparison (2D vs Iso-3D vs Thermal-3D)
+# 2. Individual Flow Commands:
+make flow_pin3d_pure                # Pure Pin-3D flow (ICCAD '20 3-pass alternating optimization + 3D ECO)
+make thermal_place                  # Thermal-aware 3D placement (TAP) optimization
+make compare_3way                   # Regenerate 3-way comparison matrix and 6-panel chart
 make visualizer_3d                  # Generate interactive 3D Web Visualizer
 make report_html                    # Generate executive sign-off HTML report
 make test                           # Run test suite

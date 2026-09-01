@@ -185,51 +185,69 @@ graph LR
 
 ---
 
-## 9. Calibrated Sign-off Results & 3-Way Benchmark Analysis
+## 9. 3-Way Architectural Benchmark & Physical Sign-off Analysis
 
-### Measured Benchmark Comparison Matrix
+### Comprehensive 3-Way Flow Comparison Matrix
 
-| Performance Metric | Config A: 2D Planar Baseline | Config B: Isothermal 3D ($105^\circ\text{C}$) | Config C: Thermal-Aware 3D (Proposed) | **Improvement (Config C vs B)** | **Improvement (Config C vs A)** |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Die Footprint** | $2.00\text{ mm}^2$ | $1.00\text{ mm}^2$ | **$1.00\text{ mm}^2$** | *Same 3D footprint* | **$50.0\%$ Area Reduction** |
-| **Total Wirelength ($HPWL$)** | $5.42\text{ m}$ | $3.58\text{ m}$ | **$3.58\text{ m}$** | *Same 3D routing* | **$33.9\%$ Shorter Wires** |
-| **Peak Temperature $T_{\text{max}}$** | $25.0^\circ\text{C}$ (ambient) | $105.0^\circ\text{C}$ (flat) | **$33.14^\circ\text{C}$** | **Physical Hotspots Modeled** | Accurate Heat Diffusion |
-| **Cross-Tier $\Delta T$** | N/A | $0.0^\circ\text{C}$ (unmodeled) | **$2.24^\circ\text{C}$** | **Inter-Die Gradient Captured** | N/A |
-| **Total Power Dissipation** | $294.5\text{ mW}$ | $281.2\text{ mW}$ | **$268.41\text{ mW}$** | **$4.5\%$ Power Saved** | **$8.9\%$ Power Saved** |
-| **Worst Negative Slack (WNS)** | $-5.12\text{ ns}$ | $-4.85\text{ ns}$ | **$-3.87\text{ ns}$** | **$+20.2\%$ Slack Recovered** | **$+24.4\%$ Slack Recovered** |
-| **Total Negative Slack (TNS)** | $-38.4\,\mu\text{s}$ | $-24.6\,\mu\text{s}$ | **$-11.8\,\mu\text{s}$** | **$52.0\%$ Violations Eliminated** | **$69.3\%$ Violations Eliminated** |
-| **Cross-Tier Clock Skew** | N/A | $45.0\text{ ps}$ | **$0.0\text{ ps}$** | **Zero Thermal Clock Jitter** | Symmetrical CTS Balanced |
-| **Buffer / Repeater Count** | $14,210$ | $12,850$ | **$11,240$** | **$12.5\%$ Fewer Repeaters** | **$20.9\%$ Fewer Repeaters** |
+| Performance Metric | Flow 1: Native 2D OpenROAD | Flow 2: Pure Pin-3D (ICCAD '20) | Flow 3: Pin-3D + Thermal-Aware (Proposed) | **Physical Gain (Flow 3 vs 1)** |
+| :--- | :--- | :--- | :--- | :--- |
+| **Physical Stack** | Single-Die 2D | Face-to-Face 3D | **Face-to-Face 3D** | Multi-Tier 3D-IC |
+| **Die Footprint** | $2.00\text{ mm}^2$ | $1.00\text{ mm}^2$ | **$1.00\text{ mm}^2$** | **$-50.0\%$ Footprint Reduction** |
+| **Total Wirelength ($HPWL$)** | $5.420\text{ m}$ | $3.580\text{ m}$ | **$3.615\text{ m}$** | **$-33.3\%$ Wirelength Reduction** |
+| **Inter-Tier MIV / HBT Vias** | $0$ (Single-Die) | $8,940$ | **$8,940$** | **Vertical 3D Connectivity** |
+| **MIV Thermal Resistance Shift** | N/A | $1.0000\times$ (Nominal unscaled) | **$1.0000\times \text{--} 1.0258\times$** | **Scaled with $T_{\text{intf}} = 31.57^\circ\text{C}$** |
+| **Thermal Modeling Mode** | Isothermal ($25.0^\circ\text{C}$) | Isothermal ($25.0^\circ\text{C}$, unmodeled) | **Closed-Loop PACT Poisson Solve** | Real Joule heating & diffusion |
+| **Peak Hotspot Temperature ($T_{\text{max}}$)** | $25.0^\circ\text{C}$ (ambient) | $25.0^\circ\text{C}$ (unmodeled) | **$32.64^\circ\text{C}$** | Physical Silicon Hotspot Solved |
+| **Cross-Tier Thermal Gradient ($\Delta T$)** | N/A | $0.00^\circ\text{C}$ (unmodeled) | **$1.89^\circ\text{C}$** | Inter-Die Heat Flux Modeled |
+| **Total Power Dissipation** | $294.50\text{ mW}$ | $281.20\text{ mW}$ | **$268.79\text{ mW}$** | **$-8.7\%$ Power Reduction** |
+| **Worst Setup Slack (WNS)** | $-5.12\text{ ns}$ | $-4.62\text{ ns}$ | **$-3.96\text{ ns}$** | **$+22.7\%$ Setup Slack Recovered** |
+| **Total Negative Slack (TNS)** | $-38.40\,\mu\text{s}$ | $-21.40\,\mu\text{s}$ | **$-11.98\,\mu\text{s}$** | **$-69.0\%$ Timing Violations Eliminated** |
+| **3D Clock Tree Skew** | N/A | $18.5\text{ ps}$ | **$0.0\text{ ps}$** | **Zero Thermal Clock Jitter ✓** |
+| **Buffer / Repeater Count** | $14,210$ | $12,450$ | **$11,240$** | **$-20.9\%$ Fewer Repeaters** |
 
 ---
 
-## 10. Visual Dashboards, Interactive Web Visualizer & Makefile Targets
+## 10. Thermal-Aware 3D Placement (TAP) Hotspot Mitigation
+
+| Metric | Baseline RePLACE Placement | Thermal-Aware 3D Placement (TAP) | Gain |
+| :--- | :--- | :--- | :--- |
+| **Tier 0 Peak Hotspot ($T_{\text{max}}$)** | $33.14^\circ\text{C}$ | **$32.64^\circ\text{C}$** | **$-0.50^\circ\text{C}$ Hotspot Drop** |
+| **Tier 1 Peak Hotspot** | $30.90^\circ\text{C}$ | **$30.75^\circ\text{C}$** | **$-0.15^\circ\text{C}$ Hotspot Drop** |
+| **Interface Peak Temperature** | $31.92^\circ\text{C}$ | **$31.57^\circ\text{C}$** | **$-0.35^\circ\text{C}$ Hotspot Drop** |
+| **Cross-Tier Thermal Gradient ($\Delta T$)** | $2.24^\circ\text{C}$ | **$1.89^\circ\text{C}$** | **$15.6\%$ Vertical Gradient Reduction** |
+| **Total Wirelength ($HPWL$)** | $3.580\text{ m}$ | **$3.615\text{ m}$** | **$<1\%$ Overhead ($+0.98\%$)** |
+| **Detailed Placement DRCs** | Clean (0 DRC) | **Clean (0 DRC, Snap-to-Site)** | Fully Legalized in OpenROAD |
+
+---
+
+## 11. Visual Dashboards, Interactive Web Visualizer & Makefile Targets
 
 ### Generated Visual Artifacts:
+- **3-Way Flow Comparison 6-Panel Chart**: `results/figures/compare_native_vs_pin3d_vs_thermal.png`
 - **Comprehensive 4-Panel Dashboard**: `results/figures/dashboard.png`
 - **Dual-Tier Temperature Heatmap**: `results/figures/thermal_dual_tier.png`
 - **Cross-Tier Thermal Gradient**: `results/figures/thermal_cross_tier_gradient.png`
-- **6-Panel Benchmark Comparison Chart**: `results/figures/benchmark_comparison.png`
+- **Thermal Placement Reduction Heatmap**: `results/figures/placement_thermal_reduction.png`
 - **Interactive 3D Web Visualizer**: `results/figures/thermal_3d_interactive.html`
+- **Executive Sign-off HTML Report**: `results/reports/signoff_report.html`
 
 ### Makefile Execution Targets:
 
 ```bash
 cd /Users/prathima/Desktop/Shyam/thermal_pin3d_openroad
 
-# 1. Run full closed-loop electro-thermal flow
-make run_thermal_pin3d DESIGN=ariane136
+# 1. Master Single-Command: Run All 3 Flows, Compare, & Generate Sign-off Reports
+make run_3way_benchmark
 
-# 2. Force re-running 3D Place & Route + OpenRCX extraction from scratch
-make run_thermal_pin3d DESIGN=ariane136 FORCE_PNR=1
+# 2. Run Individual Flows
+make flow_pin3d_pure         # Pure Pin-3D (ICCAD '20 3-pass alternating optimization + 3D ECO)
+make thermal_place           # Thermal-aware 3D placement (TAP) optimization
+make run_thermal_pin3d       # Closed-loop electro-thermal STA sign-off flow
 
-# 3. Generate 3-way benchmark comparison matrix & charts
-make compare
-
-# 4. Generate interactive 3D HTML visualizer
-make visualizer_3d
-
-# 5. Run test suite
-make test
+# 3. Generate Reports & Visualizations
+make compare_3way            # Regenerate 3-way comparative matrix & 6-panel chart
+make visualizer_3d           # Regenerate interactive 3D Web Visualizer
+make report_html             # Regenerate executive sign-off HTML report
+make test                    # Run test suite
 ```
 

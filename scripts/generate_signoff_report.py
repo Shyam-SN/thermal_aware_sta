@@ -391,6 +391,10 @@ def generate_html_report(final_summary_path: str, benchmark_json_path: str, outp
                     <img src="../figures/placement_thermal_reduction.png" alt="Thermal Placement Hotspot Mitigation">
                     <div class="gallery-caption">Fig 6: Thermal-Aware Placement (TAP) Hotspot De-coupling</div>
                 </div>
+                <div class="gallery-item">
+                    <img src="../figures/compare_native_vs_pin3d_vs_thermal.png" alt="3-Way Flow Comparison">
+                    <div class="gallery-caption">Fig 7: 3-Way Benchmark: Native 2D vs. Pure Pin-3D vs. Pin-3D + Thermal</div>
+                </div>
             </div>
         </div>
 

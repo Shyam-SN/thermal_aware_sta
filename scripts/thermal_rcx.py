@@ -610,7 +610,14 @@ class ThermalSPEFModifier:
             # Resolve net name through name map
             resolved_name = header.name_map.get(net_name, net_name)
 
-            if not pattern.match(resolved_name):
+            # Auto-detect cross-tier nets: either by name pattern or by having connections across both tiers
+            is_cross_tier = bool(pattern.match(resolved_name))
+            if not is_cross_tier:
+                has_bottom = any("_bottom" in header.name_map.get(node.split(':')[0], node.split(':')[0]) for node in net.nodes)
+                has_upper = any("_upper" in header.name_map.get(node.split(':')[0], node.split(':')[0]) for node in net.nodes)
+                is_cross_tier = (has_bottom and has_upper)
+
+            if not is_cross_tier:
                 continue
 
             for res in net.resistors:

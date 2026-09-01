@@ -75,7 +75,8 @@ TIMESTAMP       := $(shell date +%Y%m%d_%H%M%S)
 # Phony Targets
 # ---------------------------------------------------------------------------
 
-.PHONY: all run_thermal_pin3d run_full_benchmark test test_pact test_rcx dry_run \
+.PHONY: all run_thermal_pin3d run_full_benchmark flow_pin3d_pure compare_3way run_3way_benchmark \
+        test test_pact test_rcx dry_run \
         plot visualizer_3d compare report_html benchmark_ab thermal_place all_reports \
         clean clean_results clean_thermal help dirs
 
@@ -246,12 +247,51 @@ thermal_place: dirs
 		--conv-dwns $(CONV_DWNS) \
 		--skip-pnr \
 		$(VERBOSE_FLAG)
-	@echo "--- 4. Evaluating Hotspot & Thermal Gradient Reduction ---"
-	$(PYTHON) $(SCRIPTS_DIR)/compare_placement_thermal.py \
+# Stage 11: Pure Pin-3D Methodology (ICCAD '20: 3-Pass Alternating Optimization & 3D ECO)
+flow_pin3d_pure: dirs
+	@echo "============================================================"
+	@echo "  RUNNING PURE PIN-3D METHODOLOGY (ICCAD '20 3-PASS FLOW)"
+	@echo "============================================================"
+	$(OPENROAD) -exit $(SCRIPTS_DIR)/run_pin3d_3pass.tcl
+	$(PYTHON) $(SCRIPTS_DIR)/pin3d_eco_migrate.py \
+		--input-def $(RESULTS_DIR)/ariane_pin3d_pure.def \
+		--output-def $(RESULTS_DIR)/ariane_pin3d_eco.def \
+		--max-migrations 250
+	@echo "✓ Pure Pin-3D Flow Complete!"
+
+# Stage 12: 3-Way Benchmark Comparison (Native 2D vs Pure Pin-3D vs Pin-3D+Thermal)
+compare_3way: dirs
+	$(PYTHON) $(SCRIPTS_DIR)/compare_3way_flows.py \
 		--results-dir $(RESULTS_DIR)
 
+# Master 3-Way Benchmark Target
+run_3way_benchmark: dirs
+	@echo "============================================================"
+	@echo "  STARTING COMPLETE 3-WAY ARCHITECTURAL & PHYSICAL BENCHMARK"
+	@echo "  1. Native 2D OpenROAD Flow"
+	@echo "  2. Pure Pin-3D (ICCAD '20 3-Pass Sizing + 3D ECO)"
+	@echo "  3. Proposed Pin-3D + Thermal-Aware (TAP + PACT + TCR + Thermal ECO)"
+	@echo "============================================================"
+	$(MAKE) run_thermal_pin3d FORCE_PNR=1
+	$(MAKE) flow_pin3d_pure
+	$(MAKE) thermal_place
+	$(MAKE) all_reports
+	$(MAKE) compare_3way
+	@echo ""
+	@echo "============================================================"
+	@echo "  3-WAY BENCHMARK & MULTI-FLOW EVALUATION COMPLETE ✓"
+	@echo "============================================================"
+	@echo "  - 3-Way Comparison Chart:   $(FIGURES_DIR)/compare_native_vs_pin3d_vs_thermal.png"
+	@echo "  - 3-Way JSON Report:        $(REPORTS_DIR)/compare_native_vs_pin3d_vs_thermal.json"
+	@echo "  - Executive HTML Report:    $(REPORTS_DIR)/signoff_report.html"
+	@echo "  - Interactive 3D Web App:   $(FIGURES_DIR)/thermal_3d_interactive.html"
+	@echo "  - TAP Placement Heatmap:    $(FIGURES_DIR)/placement_thermal_reduction.png"
+	@echo "============================================================"
+
+benchmark_3way: run_3way_benchmark
+
 # Generate All Reports & Visuals
-all_reports: plot visualizer_3d compare report_html benchmark_ab
+all_reports: plot visualizer_3d compare report_html benchmark_ab compare_3way
 
 # Master Target: Run Full 3D P&R + Thermal Flow + Thermal-Aware Placement + Non-Thermal A/B + 3-Way Benchmark + 3D Visualizer + Executive HTML Report
 run_full_benchmark: dirs

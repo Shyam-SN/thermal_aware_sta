@@ -286,9 +286,12 @@ run_3way_benchmark: dirs
 	@echo "  2. Pure Pin-3D (ICCAD '20 3-Pass Sizing + 3D ECO)"
 	@echo "  3. Proposed Pin-3D + Thermal-Aware (TAP + PACT + TCR + Thermal ECO)"
 	@echo "============================================================"
+	$(MAKE) floorplan_3d
+	$(MAKE) partition_fm
 	$(MAKE) run_thermal_pin3d FORCE_PNR=1
 	$(MAKE) flow_pin3d_pure
 	$(MAKE) thermal_place
+	$(MAKE) gate_opt
 	$(MAKE) all_reports
 	$(MAKE) compare_3way
 	@echo ""
